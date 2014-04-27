@@ -192,7 +192,7 @@ class TMDb
 	 */
 	public function getMovieCast($id)
 	{
-		return $this->_makeCall('movie/'.$id.'/casts');
+		return $this->_makeCall('movie/'.$id.'/credits');
 	}
 
 	/**
