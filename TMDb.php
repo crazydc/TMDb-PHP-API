@@ -284,7 +284,17 @@ class TMDb
 	{
 		return $this->_makeCall('movie/latest');
 	}
-
+	
+	/**
+	 * Retrieve newest person added to TMDb
+	 *
+	 * @return TMDb result array
+	 */
+	public function getLatestPerson()
+	{
+		return $this->_makeCall('person/latest');
+	}
+	
 	/**
 	 * Retrieve movies arriving to theatres within the next few weeks
 	 *
